@@ -13,10 +13,10 @@ dcos_master = input("Enter the DNS hostname or IP of your Marathon Instance : ")
 userid = input('Enter the username for the DCOS cluster : ')
 password = input('Enter the password for the DCOS cluster : ')
 '''
-dcos_master = 'https://thomaskra-elasticl-vdprnh8o7efq-90864495.us-west-2.elb.amazonaws.com'
+dcos_master = 'https://awsmaster'
 userid = 'bootstrapuser'
 password = 'deleteme'
-marathon_app_json = '/Users/tkraus/sandbox/marathon/12b-siege.json'
+marathon_app_json = './12b-siege.json'
 
 ## Login to DCOS to retrieve an API TOKEN
 dcos_token = marathon.dcos_auth_login(dcos_master,userid,password)
